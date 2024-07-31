@@ -389,7 +389,7 @@ const MyDocument = () => {
                 <Text style={styles.EmpColLeftText}>Status</Text>
               </View>
               <View style={styles.EmployeeInfoColFour}>
-                <Text style={styles.EmpColLeftText}>ACTIVE</Text>
+                <Text style={styles.EmpColLeftText}>Active</Text>
               </View>
             </View>
           </View>
