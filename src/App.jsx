@@ -6,7 +6,9 @@ import './App.css'
 const styles = StyleSheet.create({
   page: {
     position: 'relative',
-    padding: 30,
+    paddingTop:20,
+    paddingLeft:30,
+    paddingRight:30,
     justifyContent: ' flex-start'
   },
   Header: {
@@ -97,13 +99,12 @@ const styles = StyleSheet.create({
     fontSize: 10,
   },
   EmpColLeftText: {
-    fontSize: 9,
+    fontSize: 8,
     borderRight: 0,
   },
   EmpColRightText: {
-    fontSize: 9,
+    fontSize: 8,
   },
-
   Details: {
     marginTop: 10
   },
@@ -144,8 +145,6 @@ const styles = StyleSheet.create({
     width: '100%',
     textAlign: 'center'
   },
-
-
   table: {
     marginTop: 20,
     display: 'table',
@@ -165,7 +164,6 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 5,
   },
-
   tableColTwo: {
     width: '25%',
     borderStyle: 'solid',
@@ -179,7 +177,6 @@ const styles = StyleSheet.create({
   headerTextTwo: {
     fontSize: 10,
   },
-
   Educationtable: {
     display: 'table',
     marginTop: 10,
@@ -207,7 +204,6 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0,
     backgroundColor: '#e1e6f6',
     width: '25%',
-
   },
   EducationtColTwo: {
     border: 'solid',
@@ -232,6 +228,7 @@ const styles = StyleSheet.create({
   },
   EducationtColFour: {
     border: 'solid',
+    justifyContent: 'center',
     textAlign: 'center',
     borderWidth: 1,
     width: '25%',
@@ -245,12 +242,24 @@ const styles = StyleSheet.create({
   EducationtTextt: {
     fontSize: 10,
   },
+  // Active - InActive History
 
+  DocumentTableCol: {
+    border: 'solid',
+    justifyContent: 'center',
+    borderWidth: 1,
+    width: '100%',
+    // height: 'auto',
+    textAlign: 'center',
+    padding: 5,
+    borderTopWidth: 0,
+    backgroundColor: '#F2F7F3',
+  },
   footer: {
     flexDirection: 'row',
     position: 'absolute',
     display: 'block',
-    bottom: 20,
+    bottom: 70,
     borderTop: ' 1px solid black',
     width: '100%',
     fontSize: 10,
@@ -259,19 +268,18 @@ const styles = StyleSheet.create({
     marginLeft: 30,
   },
   footerText: {
-    fontSize:8,
+    fontSize: 8,
     marginTop: 5,
     marginLeft: 0
   },
   pageNumber: {
-    fontSize:8,
+    fontSize: 8,
     marginTop: 5,
   },
   printDateTime: {
-    fontSize:8,
+    fontSize: 8,
     marginTop: 5,
   },
-
 })
 
 const MyApp = () => {
@@ -422,7 +430,7 @@ const MyDocument = () => {
 
           <View style={styles.Details}>
             <View style={styles.DetailsRow}>
-              <Text style={styles.DetailsRowTextOne}>Jon Information</Text>
+              <Text style={styles.DetailsRowTextOne}>Personal Information</Text>
             </View>
             <View style={styles.EmployeeInfoRow}>
               <View style={styles.EmployeeInfoColOne}>
@@ -466,7 +474,7 @@ const MyDocument = () => {
                 <Text style={styles.EmpColLeftText}>Status</Text>
               </View>
               <View style={styles.EmployeeInfoColFour}>
-                <Text style={styles.EmpColLeftText}>ACTIVE</Text>
+                <Text style={styles.EmpColLeftText}>Active</Text>
               </View>
             </View>
           </View>
@@ -545,102 +553,6 @@ const MyDocument = () => {
 
           {/* Education */}
 
-          {/* <View style={styles.table}>
-            <View style={styles.tableRow}>
-             
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Group Joining Date</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Present Adress</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> District</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Mobile</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Blood Group</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Grantor</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Nominee</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Reference</Text>
-              </View>
-              <View style={styles.tableCol}>
-                <Text style={styles.headerText}> Employee Category</Text>
-              </View>
-            </View>
-            
-              <View style={styles.tableRow}  wrap={false}
-                pageBreak="avoid">
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> 1</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> 51354</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> Employee Category</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> Rajib Hosen</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> ##.##</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> BBA</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> </Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> Sales</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> PSD</Text>
-                </View>
-              </View>
-              <View style={styles.tableRow}  wrap={false}
-                pageBreak="avoid">
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> 1</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> 51354</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> Employee Category</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> Rajib Hosen</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> ##.##</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> BBA</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> </Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> Sales</Text>
-                </View>
-                <View style={styles.tableColTwo}>
-                  <Text style={styles.headerTextTwo}> PSD</Text>
-                </View>
-              </View>
-           
-          </View> */}
-
-
           <View style={styles.Educationtable}>
             <View style={styles.EducationtableRow}>
               <View style={styles.EducationtTableCol}>
@@ -688,7 +600,7 @@ const MyDocument = () => {
                 <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
               </View>
               <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}></Text>
+                <Text style={styles.EducationtText}> </Text>
               </View>
               <View style={styles.EducationtColThree}>
                 <Text style={styles.EducationtText}>Daffodil International University</Text>
@@ -764,6 +676,905 @@ const MyDocument = () => {
               </View>
               <View style={styles.EducationtColThree}>
                 <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Present Leave Status */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Present Leave Status</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Type of Leave</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Define</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Leave Taken</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Processing</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Remain</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_ML</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_WOPL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>100</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> 0 </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>100</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_SLWP</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>25</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> 3 </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>22</Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Bank Account */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Bank Account</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Sl No</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Bank</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Account No</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Salary</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Dutch-Bangla Bank Limited</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>196.158.93337</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>15000</Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Gear Ups & Down */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Gear Ups & Down</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Code</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Type</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Salary History</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Position</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Payroll Effect</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Effect Date</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>RA-0771008</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>JOIN</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##.##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>WDTIL.Computer.ICT.Commercial Operations.Bench
+                  Education.Core Development.Intern</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>01-Jun-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>01-Jun-2024</Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Active - InActive History */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Active - InActive History</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Start Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>End Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>InActive Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>InActive By</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>InActive</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Active Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Active Reason</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Active - InActive History</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Attendance Details (last 10 days) */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Attendance Details (last 10 days)</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Sl No.</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Employee Id</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Punch Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Punch Day</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Shift</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>In Time</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Out Time</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Status</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>I-480</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>29-Jul-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>MONDAY</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9AM-6PM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>9:42:46 AM</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3Present</Text>
+              </View>
+            </View>
+
+
+          </View>
+
+          {/* Personal Information */}
+
+          <View style={styles.Details} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.DetailsRow}>
+              <Text style={styles.DetailsRowTextOne}>Personal Information</Text>
+            </View>
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Date of Birth</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}>13-Sep-2000 ( 23 years 10 mons 16 days )</Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Blood Group</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColRightText}>A+</Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Height</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}>5.0 feet 3.0 inches</Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Weight (Kg)</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColRightText}>62.0</Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Gender</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}>Male</Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>National ID No</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}>1958691246</Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Religion</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}>Islam</Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Disability Status</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Mobile</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Nationality</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Altenate Mobile</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Email</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Marital Status</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Alternate Email</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Spouse name</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Medical Test Result</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Spouse Education</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>TIN No</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Spouse Date of Birth</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>No. of Children</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Vacancy Requisition Code</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Name (Child-1)</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Honourable Management</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Name (Child-2)</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>File Located In</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Attachment(deed, cheque,
+                  others)</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Documented By</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Attachment(Emp Signature)</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
+              </View>
+            </View>
+            <View style={styles.EmployeeInfoRow}>
+              <View style={styles.EmployeeInfoColOne}>
+                <Text style={styles.EmpColLeftText}>Identification Mark</Text>
+              </View>
+              <View style={styles.EmployeeInfoColTwo}>
+                <Text style={styles.EmpColRightText}> </Text>
+              </View>
+              <View style={styles.EmployeeInfoColThree}>
+                <Text style={styles.EmpColLeftText}>Attachment EMP Resume</Text>
+              </View>
+              <View style={styles.EmployeeInfoColFour}>
+                <Text style={styles.EmpColLeftText}> </Text>
               </View>
             </View>
           </View>
