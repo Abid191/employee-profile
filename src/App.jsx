@@ -6,9 +6,9 @@ import './App.css'
 const styles = StyleSheet.create({
   page: {
     position: 'relative',
-    paddingTop:20,
-    paddingLeft:30,
-    paddingRight:30,
+    paddingTop: 20,
+    paddingLeft: 30,
+    paddingRight: 30,
     justifyContent: ' flex-start'
   },
   Header: {
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     fontSize: 8,
   },
   Details: {
-    marginTop: 10
+    marginTop: 15
   },
   DetailsRow: {
     flexDirection: 'row',
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   },
   Educationtable: {
     display: 'table',
-    marginTop: 10,
+    marginTop: 20,
   },
   EducationtableRow: {
     flexDirection: 'row',
@@ -235,6 +235,9 @@ const styles = StyleSheet.create({
     height: 'auto',
     padding: 5,
     borderTopWidth: 0,
+  },
+  EducationtTextSmall: {
+    fontSize: 5
   },
   EducationtText: {
     fontSize: 7.5,
@@ -551,9 +554,64 @@ const MyDocument = () => {
             </View>
           </View>
 
+
+          {/* Gear Ups & Down */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Gear Ups & Down</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Code</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Type</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Salary History</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Position</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Payroll Effect</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Effect Date</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>RA-0771008</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>JOIN</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##.##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtTextSmall}>WDTIL.Computer.ICT.Commercial Operations.Bench
+                  Education.Core Development.Intern</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>01-Jun-2024</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>01-Jun-2024</Text>
+              </View>
+            </View>
+          </View>
+
           {/* Education */}
 
-          <View style={styles.Educationtable}>
+          <View wrap={false} pageBreak="avoid" style={styles.Educationtable}>
             <View style={styles.EducationtableRow}>
               <View style={styles.EducationtTableCol}>
                 <Text style={styles.EducationtTextt}>Education</Text>
@@ -618,7 +676,64 @@ const MyDocument = () => {
                 <Text style={styles.EducationtText}> </Text>
               </View>
             </View>
-
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>M-178072</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Daffodil International University</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2022</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>GPA/CGPA</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>M-178072</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Daffodil International University</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2022</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>GPA/CGPA</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
             <View style={styles.EducationtableRow}>
               <View style={styles.EducationtColFour}>
                 <Text style={styles.EducationtText}>M-178070</Text>
@@ -648,8 +763,7 @@ const MyDocument = () => {
                 <Text style={styles.EducationtText}> </Text>
               </View>
             </View>
-
-            <View style={styles.EducationtableRow}>
+            {/* <View style={styles.EducationtableRow}>
               <View style={styles.EducationtColFour}>
                 <Text style={styles.EducationtText}>M-178071</Text>
               </View>
@@ -677,7 +791,7 @@ const MyDocument = () => {
               <View style={styles.EducationtColThree}>
                 <Text style={styles.EducationtText}> </Text>
               </View>
-            </View>
+            </View> */}
           </View>
 
           {/* Present Leave Status */}
@@ -761,6 +875,40 @@ const MyDocument = () => {
                 <Text style={styles.EducationtText}>100</Text>
               </View>
             </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_WOPL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>100</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> 0 </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>100</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_WOPL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>100</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> 0 </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>100</Text>
+              </View>
+            </View>
 
             <View style={styles.EducationtableRow}>
               <View style={styles.EducationtColFour}>
@@ -822,59 +970,6 @@ const MyDocument = () => {
             </View>
           </View>
 
-          {/* Gear Ups & Down */}
-
-          <View style={styles.Educationtable} wrap={false}
-            pageBreak="avoid">
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtTableCol}>
-                <Text style={styles.EducationtTextt}>Gear Ups & Down</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColTwo}>
-                <Text style={styles.EducationtText}>Code</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Type</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Salary History</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Position</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Payroll Effect</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Effect Date</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>RA-0771008</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>JOIN</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##.##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>WDTIL.Computer.ICT.Commercial Operations.Bench
-                  Education.Core Development.Intern</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>01-Jun-2024</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>01-Jun-2024</Text>
-              </View>
-            </View>
-          </View>
 
           {/* Active - InActive History */}
 
