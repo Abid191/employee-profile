@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     fontSize: 8,
   },
   Details: {
-    marginTop: 15
+    marginTop: 25
   },
   DetailsRow: {
     flexDirection: 'row',
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   table: {
-    marginTop: 20,
+    marginTop: 30,
     display: 'table',
     width: 'auto',
   },
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   },
   Educationtable: {
     display: 'table',
-    marginTop: 20,
+    marginTop: 18,
   },
   EducationtableRow: {
     flexDirection: 'row',
@@ -554,7 +554,6 @@ const MyDocument = () => {
             </View>
           </View>
 
-
           {/* Gear Ups & Down */}
 
           <View style={styles.Educationtable} wrap={false}
@@ -605,537 +604,6 @@ const MyDocument = () => {
               </View>
               <View style={styles.EducationtColThree}>
                 <Text style={styles.EducationtText}>01-Jun-2024</Text>
-              </View>
-            </View>
-          </View>
-
-          {/* Education */}
-
-          <View wrap={false} pageBreak="avoid" style={styles.Educationtable}>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtTableCol}>
-                <Text style={styles.EducationtTextt}>Education</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColTwo}>
-                <Text style={styles.EducationtText}>Code</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Exam Name</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Gruop</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Board/University</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Institute Name</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Pass year</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Div/Class/GP</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Result</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Remarks</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>M-178072</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Daffodil International University</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>2022</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>GPA/CGPA</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>M-178072</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Daffodil International University</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>2022</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>GPA/CGPA</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>M-178072</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Daffodil International University</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>2022</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>GPA/CGPA</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>M-178070</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>HSC Board</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> Science </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Dhaka</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Sristy College Of Tangail</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>2018</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>GPA/CGPA</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3.50 (5.00)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-            </View>
-            {/* <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>M-178071</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>SSC Board</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> Science </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Dhaka</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Shaheen School Tangail</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>2016</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>GPA/CGPA</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>4.67 (5.00)</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> </Text>
-              </View>
-            </View> */}
-          </View>
-
-          {/* Present Leave Status */}
-
-          <View style={styles.Educationtable} wrap={false}
-            pageBreak="avoid">
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtTableCol}>
-                <Text style={styles.EducationtTextt}>Present Leave Status</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColTwo}>
-                <Text style={styles.EducationtText}>Type of Leave</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Define</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Leave Taken</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Processing</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Remain</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>LEAVE_CL</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>0</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>1</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>LEAVE_ML</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>3</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>1</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>1</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>2</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>LEAVE_WOPL</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>100</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> 0 </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>0</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>100</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>LEAVE_WOPL</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>100</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> 0 </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>0</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>100</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>LEAVE_WOPL</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>100</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> 0 </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>0</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>100</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>LEAVE_SLWP</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>25</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}> 3 </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>0</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>22</Text>
-              </View>
-            </View>
-          </View>
-
-          {/* Bank Account */}
-
-          <View style={styles.Educationtable} wrap={false}
-            pageBreak="avoid">
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtTableCol}>
-                <Text style={styles.EducationtTextt}>Bank Account</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColTwo}>
-                <Text style={styles.EducationtText}>Sl No</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Bank</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Account No</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Salary</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>1</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>Dutch-Bangla Bank Limited</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>196.158.93337</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>15000</Text>
-              </View>
-            </View>
-          </View>
-
-
-          {/* Active - InActive History */}
-
-          <View style={styles.Educationtable} wrap={false}
-            pageBreak="avoid">
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtTableCol}>
-                <Text style={styles.EducationtTextt}>Active - InActive History</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColTwo}>
-                <Text style={styles.EducationtText}>Start Date</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>End Date</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>InActive Date</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>InActive By</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>InActive</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Active Date</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Active Reason</Text>
-              </View>
-              <View style={styles.EducationtColOne}>
-                <Text style={styles.EducationtText}>Active - InActive History</Text>
-              </View>
-            </View>
-
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-## </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-## </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-## </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-## </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-            </View>
-            <View style={styles.EducationtableRow}>
-              <View style={styles.EducationtColFour}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-## </Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
-              </View>
-              <View style={styles.EducationtColThree}>
-                <Text style={styles.EducationtText}>##-##</Text>
               </View>
             </View>
           </View>
@@ -1441,7 +909,333 @@ const MyDocument = () => {
 
           </View>
 
-          {/* Personal Information */}
+          {/* Education */}
+
+          <View wrap={false} pageBreak="avoid" style={styles.Educationtable}>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Education</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Code</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Exam Name</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Gruop</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Board/University</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Institute Name</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Pass year</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Div/Class/GP</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Result</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Remarks</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>M-178072</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Daffodil International University</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2022</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>GPA/CGPA</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>M-178072</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Daffodil International University</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2022</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>GPA/CGPA</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>M-178072</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Daffodil International University</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2022</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>GPA/CGPA</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>M-178072</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>BSC in Engineering (Private)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Computer Science And Engineering</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Daffodil International University</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>2022</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>GPA/CGPA</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3.08 (4.00)</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}> </Text>
+              </View>
+            </View>
+           
+          </View> 
+          
+          {/* Active - InActive History */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Active - InActive History</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Start Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>End Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>InActive Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>InActive By</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>InActive</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Active Date</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Active Reason</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Active - InActive History</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-## </Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>##-##</Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Personal Information */} 
 
           <View style={styles.Details} wrap={false}
             pageBreak="avoid">
@@ -1673,6 +1467,224 @@ const MyDocument = () => {
               </View>
             </View>
           </View>
+
+          {/* Bank Account */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Bank Account</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Sl No</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Bank</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Account No</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Salary</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>Dutch-Bangla Bank Limited</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>196.158.93337</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>15000</Text>
+              </View>
+            </View>
+          </View>
+
+          {/* Present Leave Status */}
+
+          <View style={styles.Educationtable} wrap={false}
+            pageBreak="avoid">
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtTableCol}>
+                <Text style={styles.EducationtTextt}>Present Leave Status</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColTwo}>
+                <Text style={styles.EducationtText}>Type of Leave</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Define</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Leave Taken</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Processing</Text>
+              </View>
+              <View style={styles.EducationtColOne}>
+                <Text style={styles.EducationtText}>Remain</Text>
+              </View>
+            </View>
+
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+            <View style={styles.EducationtableRow}>
+              <View style={styles.EducationtColFour}>
+                <Text style={styles.EducationtText}>LEAVE_CL</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>0</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>1</Text>
+              </View>
+              <View style={styles.EducationtColThree}>
+                <Text style={styles.EducationtText}>3</Text>
+              </View>
+            </View>
+
+            
+          </View>
+
+          
+
+
+          
+
+          
+
+          
         </View>
         <Footer></Footer>
       </Page>
